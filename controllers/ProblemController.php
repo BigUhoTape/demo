@@ -123,7 +123,7 @@ class ProblemController extends Controller
             $model->photoAfter = $newFileName;
             $model->status = 'Решена';
             $model->save();
-            $model->photoAfterForm->saveAs('uploads/' . $newFileName);
+            $model->photoAfterForm->saveAs('web/uploads/' . $newFileName);
             return $this->redirect(['index']);
         }
 

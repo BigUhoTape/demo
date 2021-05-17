@@ -25,10 +25,10 @@ $this->title = 'My Yii Application';
 
                     <img
                         class="img-responsive"
-                        src="uploads/<?=$problem->photoBefore?>"
+                        src="web/uploads/<?=$problem->photoBefore?>"
                         alt="<?=$problem->name?>"
-                        data-after="uploads/<?=$problem->photoAfter?>"
-                        data-before="uploads/<?=$problem->photoBefore?>"
+                        data-after="web/uploads/<?=$problem->photoAfter?>"
+                        data-before="web/uploads/<?=$problem->photoBefore?>"
                         onmouseover="hover(this)"
                         onmouseout="back(this)"
                     >

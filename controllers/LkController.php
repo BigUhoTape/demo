@@ -108,7 +108,7 @@ class LkController extends Controller
             $model->photoBefore = $newFileName;
             $model->idUser = \Yii::$app->user->identity->id;
             $model->save();
-            $model->photoBeforeForm->saveAs('uploads/' . $newFileName);
+            $model->photoBeforeForm->saveAs('web/uploads/' . $newFileName);
             return $this->redirect(['/lk', 'id' => $model->id]);
         }
 
